@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "bankapp_refactored_week4/1.0.0": {
+        "dependencies": {
+          "nunit.framework": "3.12.0.0"
+        },
+        "runtime": {
+          "bankapp_refactored_week4.dll": {}
+        }
+      },
+      "nunit.framework/3.12.0.0": {
+        "runtime": {
+          "nunit.framework.dll": {
+            "assemblyVersion": "3.12.0.0",
+            "fileVersion": "3.12.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "bankapp_refactored_week4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "nunit.framework/3.12.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
