@@ -9,16 +9,17 @@ namespace bankapp_refactored_week4.ClassLibraries
         private static int id = 1;
         public Customer(string firstName, string lastName, string email, string password)
         {
+            Username = $"{firstName} {lastName}";
             FirstName = firstName;
             LastName = lastName;
             Email = email;
             UniqueId = id;
             id++;
             Password = password;
-            AllCustomer.Add(this);
+            Bank.AllCustomers.Add(this);
         }
 
-        public static List<Customer> AllCustomer = new List<Customer>();
+        // public static List<Customer> AllCustomer = new List<Customer>();
 
         public int UniqueId { get; }
 
@@ -28,5 +29,7 @@ namespace bankapp_refactored_week4.ClassLibraries
 
         public string Email { get; set; }
         public string Password { get; }
+
+        public string Username { get; }
     }
 }

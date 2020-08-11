@@ -6,18 +6,6 @@ namespace bankapp_refactored_week4.ClassLibraries
 {
     public class Transactions
     {
-        public Transactions(BankAccount customer, decimal amount, decimal balance, DateTime date, string note)
-        {
-            AccountNo = customer.AccountNumber;
-            CustomerName = customer.CustomerName;
-            AccountType = customer.AccountType;
-            Amount = amount;
-            this.note = note;
-            this.date = date;
-
-
-
-        }
         public decimal Amount { get; }
         public string transactionType { get; }
         public string note { get; }
@@ -28,5 +16,17 @@ namespace bankapp_refactored_week4.ClassLibraries
         public string AccountType { get; }
 
         public decimal AccountBalance { get; set; }
+
+        public Transactions(BankAccount customer, decimal amount, decimal balance, DateTime date, string note)
+        {
+            AccountNo = customer.AccountNumber;
+            CustomerName = customer.CustomerName;
+            AccountType = customer.AccountType;
+            Amount = amount;
+            this.note = note;
+            this.date = date;
+            AccountBalance = amount;
+        }
+       
     }
 }
