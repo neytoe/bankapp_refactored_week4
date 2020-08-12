@@ -26,8 +26,18 @@ namespace bankapp_refactored_week4
 
 
 
+            var cus1 = new Customer("tochukwu", "Anyankah", "nany@gail.com", "1997");
+            Bank.Login(cus1.Username, cus1.Password);
+            Bank.GetAllLoggedInUsers();
+            var cus3 = new Customer("nechukwu", "Anyankah", "nany@gail.com", "1998");
+            Bank.Login(cus3.Username, cus3.Password);
+            Bank.GetAllLoggedInUsers();
+            var cus = new Customer("netochukwu", "Anyankah", "nany@gmail.com", "1996");
+            Bank.Login(cus.Username, cus.Password);
 
-            //var cus = new Customer("netochukwu", "Anyankah", "nany@gmail.com", "1996");
+            Bank.GetAllLoggedInUsers();
+
+
             //var cus1 = new Customer("tochukwu", "Anyankah", "nany@gail.com", "1997");
             //var cus3 = new Customer("nechukwu", "Anyankah", "nany@gail.com", "1998");
 
