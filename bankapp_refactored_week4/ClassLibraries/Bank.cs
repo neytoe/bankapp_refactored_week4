@@ -6,6 +6,7 @@ namespace bankapp_refactored_week4.ClassLibraries
 {
     public  class Bank
     {
+        //Properties of the bank app
         public static List<Transactions> AllTransactions { get; set; } = new List<Transactions>();
         public static List<Customer> AllCustomers { get; set; } = new List<Customer>();
         public static List<BankAccount> AllAccounts { get; set; } = new List<BankAccount>();
@@ -19,18 +20,25 @@ namespace bankapp_refactored_week4.ClassLibraries
         {
 
             //Looping through the List of Allcustomers to check if the user exists
-            foreach (var customer in AllCustomers)
+            //for (var i = 0; i < AllCustomers.Count; i++)
+            //{
+            //        if ((AllCustomers[i].Username == name) && (AllCustomers[i].Password == password))
+            //        { 
+            //            LoggedInUser.Add(AllCustomers[i]);
+            //         Console.WriteLine("Customer successfully logged in");
+
+            //         }
+
+            //}
+            var check = AllCustomers.Find(x => x.Username == name && x.Password == password);
+
+            if(check != null)
             {
-                    if (customer.Username.Equals(name) && customer.Password.Equals(password))
-                    { 
-                        LoggedInUser.Add(customer);
-                    // Console.WriteLine("Customer successfully logged in");
-                   break;
-                     }
-                    else
-                    {
-                    throw new NullReferenceException("Invalid Login Details");
-                }
+                LoggedInUser.Add(check);
+                Console.WriteLine("Customer successfully logged in");
+            } else
+            {
+                throw new NullReferenceException("Invalid Login Details");
             }
         }
 

@@ -6,6 +6,7 @@ namespace bankapp_refactored_week4.ClassLibraries
 {
     public class Transactions
     {
+        //this class holds the properties of a typical transaction
         public decimal Amount { get; }
         public string transactionType { get; }
         public string note { get; }

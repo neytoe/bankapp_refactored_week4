@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\bankapp_refactored_week4",
+    "\\bankapp_refactored_week4\\ClassLibraries",
     "\\bankapp_refactored_week4\\Helperclasses",
     "\\TestProject"
   ],
+  "SelectedNode": "\\bankapp_refactored_week4\\ClassLibraries\\Transactions.cs",
   "PreviewInSolutionExplorer": false
 }

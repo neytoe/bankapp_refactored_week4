@@ -6,6 +6,7 @@ namespace bankapp_refactored_week4.ClassLibraries
 {
    public class Customer
     {
+        //This class holds all the properties of a typical customer
         private static int id = 1;
         public Customer(string firstName, string lastName, string email, string password)
         {
